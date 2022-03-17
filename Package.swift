@@ -63,8 +63,7 @@ let package = Package(
         "SyntaxAnyVisitor.swift.gyb",
         "SyntaxNodes.swift.gyb.template",
         "SyntaxKind.swift.gyb",
-      ],
-      swiftSettings: [.unsafeFlags(swiftSyntaxUnsafeSwiftFlags)]
+      ]
     ),
     .target(
       name: "SwiftSyntaxBuilder",
