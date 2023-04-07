@@ -23,6 +23,9 @@ import XCTest
 ///     which this function was called.
 ///   - line: The line number on which failure occurred. Defaults to the line number on which this
 ///     function was called.
+@available(iOS 13.0, *)
+@available(tvOS 13.0, *)
+@available(watchOS 6.0, *)
 public func AssertStringsEqualWithDiff(
   _ actual: String,
   _ expected: String,
@@ -55,6 +58,9 @@ public func AssertStringsEqualWithDiff(
 ///     which this function was called.
 ///   - line: The line number on which failure occurred. Defaults to the line number on which this
 ///     function was called.
+@available(iOS 13.0, *)
+@available(tvOS 13.0, *)
+@available(watchOS 6.0, *)
 public func AssertDataEqualWithDiff(
   _ actual: Data,
   _ expected: Data,
@@ -80,6 +86,9 @@ public func AssertDataEqualWithDiff(
 }
 
 /// `XCTFail` with `diff`-style output.
+@available(iOS 13.0, *)
+@available(tvOS 13.0, *)
+@available(watchOS 6.0, *)
 public func FailStringsEqualWithDiff(
   _ actual: String,
   _ expected: String,

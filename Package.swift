@@ -24,13 +24,6 @@ if ProcessInfo.processInfo.environment["SWIFT_BUILD_SCRIPT_ENVIRONMENT"] != nil 
 
 let package = Package(
   name: "SwiftSyntax",
-  platforms: [
-    .macOS(.v10_15),
-    .iOS(.v13),
-    .tvOS(.v13),
-    .watchOS(.v6),
-    .macCatalyst(.v13),
-  ],
   products: [
     .library(name: "IDEUtils", type: .static, targets: ["IDEUtils"]),
     .library(name: "SwiftDiagnostics", type: .static, targets: ["SwiftDiagnostics"]),
